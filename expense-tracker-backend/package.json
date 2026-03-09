@@ -1,0 +1,19 @@
+{
+  "name": "expense-tracker-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@tsndr/cloudflare-worker-jwt": "^3.2.1",
+    "bcryptjs": "^3.0.3",
+    "hono": "^4.11.9"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "wrangler": "^4.4.0"
+  }
+}
